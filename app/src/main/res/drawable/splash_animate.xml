@@ -6,18 +6,18 @@
         android:drawable="@drawable/ic_android_black_24dp"
         android:duration="150" />
     <item
-        android:drawable="@drawable/ic_launcher_background"
+        android:drawable="@drawable/ic_android_white_24dp"
         android:duration="150" />
     <item
         android:drawable="@drawable/ic_android_black_24dp"
         android:duration="150" />
     <item
-        android:drawable="@drawable/ic_launcher_background"
+        android:drawable="@drawable/ic_android_white_24dp"
         android:duration="150" />
     <item
         android:drawable="@drawable/ic_android_black_24dp"
         android:duration="200" />
     <item
-        android:drawable="@drawable/ic_launcher_background"
+        android:drawable="@drawable/ic_android_white_24dp"
         android:duration="200" />
 </animation-list>

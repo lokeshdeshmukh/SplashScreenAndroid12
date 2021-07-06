@@ -1,5 +1,7 @@
 package com.example.myapplication
 
+import android.graphics.RenderEffect
+import android.graphics.Shader
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -33,7 +35,14 @@ class FirstFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonFirst.setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+            binding.root.findViewById<View>(R.id.main_view2).
+            setRenderEffect(RenderEffect.createBlurEffect(10f, 10f, Shader.TileMode.CLAMP))
+            Thread(Runnable {
+                Thread.sleep(4000);
+                requireActivity().runOnUiThread {
+                    binding.root.findViewById<View>(R.id.main_view2).setRenderEffect(null);
+                }
+            }).start()
         }
     }
 
